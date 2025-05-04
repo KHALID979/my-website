@@ -64,15 +64,11 @@ header {
 }
 
 header img {
-  width: 20px;  /* ✅ লোগোর সাইজ ছোট করা হয়েছে */
+  width: 50px;  /* ✅ লোগোর সাইজ ছোট করা হয়েছে */
   height: auto;
   margin-right: 8px;
   vertical-align: middle;
 }
-
-
-
-
 
 /* Products Section */
 .products {
@@ -154,3 +150,31 @@ header img {
 
 /* About Section */
 /* এখানে প্রয়োজন হলে আপনি পরের সেকশন যুক্ত করবেন */
+
+/* Media Queries for better mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar ul {
+    padding: 0;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .product-card img {
+    height: 180px; /* মোবাইল ভিউতে প্রোডাক্ট ইমেজের সাইজ সামঞ্জস্য */
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}
