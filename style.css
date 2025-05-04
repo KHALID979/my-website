@@ -72,6 +72,37 @@ header {
   border-radius: 5px;
 }
 
+/* Buttons */
+.cart-btn, .whatsapp-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cart-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.cart-btn:hover {
+  background-color: #218838;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
 /* Contact Section */
 .contact {
   background: #f1f1f1;
