@@ -4,9 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Khalid's Shop</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
-    /* Scrollable text */
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Header */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Running Text */
     .marquee {
       background-color: #000;
       color: #fff;
@@ -31,22 +79,136 @@
       }
     }
 
+    /* Product Section */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .product-card {
+      background-color: #f9f9f9;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product-card h2 {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+
+    .product-card p {
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .cart-btn, .whatsapp-btn {
+      background-color: #ff5733;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.1em;
+      text-align: center;
+      display: block;
+      margin: 10px auto;
+      width: 80%;
+    }
+
+    .cart-btn:hover, .whatsapp-btn:hover {
+      background-color: #e74c3c;
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .contact form input,
+    .contact form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1.1em;
+    }
+
+    .contact form button {
+      background-color: #33c1ff;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    .contact form button:hover {
+      background-color: #2999b3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
     /* Responsive Design */
     @media (max-width: 768px) {
-      /* Adjust navbar for smaller screens */
-      nav ul {
+      .navbar ul {
         flex-direction: column;
-        padding: 0;
-      }
-      nav ul li {
-        text-align: center;
-        margin: 10px 0;
       }
 
-      /* Adjust product image for mobile */
-      .product-card img {
-        max-width: 100%;
-        height: auto;
+      .product-card {
+        width: 100%;
+        max-width: 350px;
+      }
+
+      .marquee p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar ul {
+        padding-left: 0;
+      }
+
+      .product-card {
+        width: 100%;
+        max-width: 280px;
       }
     }
   </style>
@@ -62,7 +224,7 @@
     </ul>
   </nav>
 
-  <!-- Running Text (Marquee) -->
+  <!-- Running Text -->
   <div class="marquee">
     <p>আমাদের যেকোনো পন্য অর্ডার করতে কল করুন অথবা হটসআপ করুন: 01540-143224</p>
   </div>
@@ -83,7 +245,7 @@
     </div>
 
     <div class="product-card">
-      <img src="https://github.com/KHALID979/my-website/blob/84d96ab7c81719055a1ef2d8f669f400146f691c/%E0%A6%AE%E0%A6%A7%E0%A7%81.jpg?raw=true" alt="Honey" />
+      <img src="https://github.com/KHALID979/my-website/blob/84d96ab7c81719055a1ef2d8f669f400146f691c/%E0%A6%AE%E0%A6%A6%E0%A7%81.jpg?raw=true" alt="Honey" />
       <h2>মধু</h2>
       <p>৳500</p>
       <button class="cart-btn">Add to Cart</button>
