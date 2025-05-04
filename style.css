@@ -1,29 +1,134 @@
-/* Add to Cart Button */
-.cart-btn {
-    background-color: #0073e6;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    margin-top: 10px;
-    border-radius: 5px;
-    display: inline-block;
-    width: 100%; /* Change width to auto for a smaller button */
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 1em; /* Set a smaller font size */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* WhatsApp Order Button */
+/* Body and background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F9F9F9; /* Light background */
+  color: #333333; /* Dark text */
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2A7D66; /* Forest Green */
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #A0CECB; /* Mint Teal */
+  color: #2A7D66; /* Forest Green */
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+/* Products Section */
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h2 {
+  margin: 15px 0;
+  color: #2A7D66; /* Forest Green */
+}
+
+.product-card p {
+  color: #E67E22; /* Bright Orange */
+  font-size: 1.5em;
+}
+
+.cart-btn, .whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.cart-btn {
+  background-color: #E67E22; /* Bright Orange */
+}
+
 .whatsapp-btn {
-    background-color: #25D366;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    margin-top: 10px;
-    border-radius: 5px;
-    display: inline-block;
-    width: 100%; /* Change width to auto for a smaller button */
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 1em; /* Set a smaller font size */
+  background-color: #25D366; /* WhatsApp Green */
+}
+
+/* Contact Section */
+.contact {
+  background-color: #A0CECB; /* Mint Teal */
+  padding: 50px;
+  text-align: center;
+}
+
+.contact form input, .contact form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #2A7D66; /* Forest Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2A7D66; /* Forest Green */
+  color: white;
+  font-size: 1em;
 }
