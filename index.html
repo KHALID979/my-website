@@ -6,11 +6,18 @@
   <title>KHALID SHOP</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
     /* Scrolling text style */
     .scrolling-text {
       background-color: #ff9900;
       color: white;
-      font-size: 16px;
+      font-size: 18px;
       padding: 10px;
       white-space: nowrap;
       overflow: hidden;
@@ -31,19 +38,125 @@
       }
     }
 
-    /* Logo size adjustment */
+    /* Header logo */
     .logo {
-      width: 50px; /* Adjust the size of the logo here */
+      width: 50px; /* Adjust the size of the logo */
       height: auto;
+    }
+
+    /* Mobile responsive design */
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Products section */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-card h2 {
+      font-size: 22px;
+      margin: 10px 0;
+    }
+
+    .product-card p {
+      font-size: 18px;
+      color: #ff9900;
+    }
+
+    .cart-btn, .whatsapp-btn {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Contact form */
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .contact button {
+      padding: 10px;
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Media Queries for mobile devices */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .product-card h2 {
+        font-size: 18px;
+      }
+
+      .scrolling-text {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Navigation Menu -->
+  <!-- Scrolling Text -->
   <div class="scrolling-text">
     <span>আমাদের যেকোনো পন্য অর্ডার করতে কল করুন অথবা হটসআপ করুন: 01540-143224</span>
   </div>
 
+  <!-- Navigation Menu -->
   <nav class="navbar">
     <ul>
       <li><a href="#">Home</a></li>
