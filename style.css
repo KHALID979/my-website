@@ -64,9 +64,12 @@ header {
 }
 
 header img {
-  width: 28px;
+  width: 18px;
   height: auto;
+  margin-right: 8px;
+  vertical-align: middle;
 }
+
 
 
 
