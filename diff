@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আমার ব্যবসা</title>
+</head>
+<body>
+  <h1>স্বাগতম আমার দোকানে</h1>
+  <p>এখানে আপনি নানা ধরনের পণ্য পাবেন!</p>
+
+  <table border="1" cellpadding="10">
+    <tr>
+      <th>ছবি</th><th>পণ্যের নাম</th><th>দাম</th>
+    </tr>
+    <tr>
+      <td><img src="https://via.placeholder.com/100" alt="পণ্য ১"></td>
+      <td>পণ্য ১</td>
+      <td>৳১০০</td>
+    </tr>
+    <tr>
+      <td><img src="https://via.placeholder.com/100" alt="পণ্য ২"></td>
+      <td>পণ্য ২</td>
+      <td>৳২০০</td>
+    </tr>
+  </table>
+</body>
+</html>
