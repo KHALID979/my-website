@@ -5,9 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KHALID SHOP</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Scrolling text style */
+    .scrolling-text {
+      background-color: #ff9900;
+      color: white;
+      font-size: 16px;
+      padding: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .scrolling-text span {
+      position: absolute;
+      animation: scroll-text 15s linear infinite;
+    }
+
+    @keyframes scroll-text {
+      0% {
+        left: 100%;
+      }
+      100% {
+        left: -100%;
+      }
+    }
+
+    /* Logo size adjustment */
+    .logo {
+      width: 50px; /* Adjust the size of the logo here */
+      height: auto;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Menu -->
+  <div class="scrolling-text">
+    <span>আমাদের যেকোনো পন্য অর্ডার করতে কল করুন অথবা হটসআপ করুন: 01540-143224</span>
+  </div>
+
   <nav class="navbar">
     <ul>
       <li><a href="#">Home</a></li>
