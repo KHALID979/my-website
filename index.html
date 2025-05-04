@@ -2,220 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Khalid's Shop</title>
-  <style>
-    /* General Styling */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Header */
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2em;
-    }
-
-    /* Navigation */
-    nav {
-      background-color: #333;
-      color: white;
-      padding: 10px 0;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin: 0 20px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.2em;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    /* Running Text */
-    .marquee {
-      background-color: #000;
-      color: #fff;
-      padding: 10px 0;
-      white-space: nowrap;
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .marquee p {
-      display: inline-block;
-      animation: marquee 15s linear infinite;
-      font-size: 18px;
-    }
-
-    @keyframes marquee {
-      from {
-        transform: translateX(100%);
-      }
-      to {
-        transform: translateX(-100%);
-      }
-    }
-
-    /* Product Section */
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .product-card {
-      background-color: #f9f9f9;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-      width: 300px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .product-card h2 {
-      font-size: 1.5em;
-      margin: 10px 0;
-    }
-
-    .product-card p {
-      font-size: 1.2em;
-      color: #333;
-    }
-
-    .cart-btn, .whatsapp-btn {
-      background-color: #ff5733;
-      color: white;
-      padding: 10px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 1.1em;
-      text-align: center;
-      display: block;
-      margin: 10px auto;
-      width: 80%;
-    }
-
-    .cart-btn:hover, .whatsapp-btn:hover {
-      background-color: #e74c3c;
-    }
-
-    /* Contact Section */
-    .contact {
-      background-color: #f1f1f1;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .contact h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-
-    .contact form input,
-    .contact form textarea {
-      width: 80%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      font-size: 1.1em;
-    }
-
-    .contact form button {
-      background-color: #33c1ff;
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.2em;
-      cursor: pointer;
-    }
-
-    .contact form button:hover {
-      background-color: #2999b3;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      position: relative;
-    }
-
-    footer p {
-      margin: 0;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .navbar ul {
-        flex-direction: column;
-      }
-
-      .product-card {
-        width: 100%;
-        max-width: 350px;
-      }
-
-      .marquee p {
-        font-size: 14px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .navbar ul {
-        padding-left: 0;
-      }
-
-      .product-card {
-        width: 100%;
-        max-width: 280px;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KHALID SHOP</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Moving Notice Bar -->
+  <div class="marquee">
+    <marquee behavior="scroll" direction="left">
+      আমাদের যেকোনো পন্য অর্ডার করতে কল করুন অথবা হটসআপ করুন: 01540-143224
+    </marquee>
+  </div>
+
   <!-- Navigation Menu -->
   <nav class="navbar">
+    <img src="987.png" alt="Logo" class="logo" />
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#products">Products</a></li>
@@ -224,31 +25,31 @@
     </ul>
   </nav>
 
-  <!-- Running Text -->
-  <div class="marquee">
-    <p>আমাদের যেকোনো পন্য অর্ডার করতে কল করুন অথবা হটসআপ করুন: 01540-143224</p>
-  </div>
-
   <!-- Header -->
   <header>
-    <h1>Welcome to Khalid's Shop</h1>
+    <h1>Welcome to KHALID SHOP</h1>
   </header>
 
   <!-- Product Section -->
   <section class="products" id="products">
     <div class="product-card">
-      <img src="https://github.com/KHALID979/my-website/blob/9e696393ab7af4b5339c07bdf985c38a6b32e369/%E0%A6%96%E0%A7%87%E0%A6%9C%E0%A7%81%E0%A6%B0.jpg?raw=true" alt="Dates" />
-      <h2>খেজুর</h2>
-      <p>৳300</p>
-      <button class="cart-btn">Add to Cart</button>
-      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Dates" target="_blank">Order on WhatsApp</a>
+      <img src="264.jpg" alt="Leather Wallet" />
+      <h2>Leather Wallet</h2>
+      <p>৳500</p>
+      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Leather%20Wallet" target="_blank">Order on WhatsApp</a>
     </div>
 
     <div class="product-card">
-      <img src="https://github.com/KHALID979/my-website/blob/84d96ab7c81719055a1ef2d8f669f400146f691c/%E0%A6%AE%E0%A6%A6%E0%A7%81.jpg?raw=true" alt="Honey" />
-      <h2>মধু</h2>
-      <p>৳500</p>
-      <button class="cart-btn">Add to Cart</button>
+      <img src="%E0%A6%96%E0%A7%87%E0%A6%9C%E0%A7%81%E0%A6%B0.jpg" alt="খেজুর" />
+      <h2>Premium Dates (খেজুর)</h2>
+      <p>৳800</p>
+      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Premium%20Dates" target="_blank">Order on WhatsApp</a>
+    </div>
+
+    <div class="product-card">
+      <img src="%E0%A6%AE%E0%A6%A7%E0%A7%81.jpg" alt="মধু" />
+      <h2>Organic Honey (মধু)</h2>
+      <p>৳650</p>
       <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Honey" target="_blank">Order on WhatsApp</a>
     </div>
   </section>
@@ -264,9 +65,17 @@
     </form>
   </section>
 
+  <!-- About Section -->
+  <section class="about">
+    <h2>ABOUT</h2>
+    <p>
+      আমরা একটি বিশ্বস্ত অনলাইন প্ল্যাটফর্ম, যেখানে পাওয়া যায় বিভিন্ন ধরণের অর্গানিক পণ্য, ফ্যাশন আইটেম ও স্বাস্থ্যসম্মত খাদ্যপণ্য। মান, আস্থা ও প্রাকৃতিক জীবনের প্রতি অঙ্গীকার নিয়েই আমাদের পথচলা। আপনার সুস্থ ও স্টাইলিশ জীবনযাত্রায় পাশে থাকতে চাই আমরা।
+    </p>
+  </section>
+
   <!-- Footer -->
   <footer>
-    <p>© 2025 Khalid's Shop. All rights reserved.</p>
+    <p>© 2025 KHALID SHOP. All rights reserved.</p>
   </footer>
 </body>
 </html>
