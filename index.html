@@ -1,75 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Khalid's Shop</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khalid's Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Basic styling for the website */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            width: 280px;
+            margin: 20px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-card h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .product-card p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .product-card .cart-btn,
+        .product-card .whatsapp-btn {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .product-card .cart-btn:hover,
+        .product-card .whatsapp-btn:hover {
+            background-color: #005bb5;
+        }
+
+        .contact {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background-color: #0073e6;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .contact form button:hover {
+            background-color: #005bb5;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
-  <!-- Navigation Menu -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="https://www.facebook.com/sfadhrvagn" target="_blank">Facebook</a></li>
-    </ul>
-  </nav>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://www.facebook.com/sfadhrvagn" target="_blank">Facebook</a></li>
+        </ul>
+    </nav>
 
-  <!-- Header -->
-  <header>
-    <h1>Welcome to Khalid's Shop</h1>
-  </header>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Khalid's Shop</h1>
+    </header>
 
-  <!-- Product Section -->
-  <section class="products" id="products">
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200?text=Product+1" alt="<div class="product-card">
-  <img src="https://github.com/KHALID979/my-website/blob/47aedfa52c1b3eab551158b9db2158f27a42f4b3/264.jpg?raw=true" alt="Leather Wallet" />
-  <h2>Leather Wallet</h2>
-  <p>৳500</p>
-  <button class="cart-btn">Add to Cart</button>
-  <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Leather%20Wallet" target="_blank">Order on WhatsApp</a>
-</div>
-" />
-      <h2>Leather Wallet</h2>
-      <p>৳500</p>
-      <button class="cart-btn">Add to Cart</button>
-      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Leather%20Wallet" target="_blank">Order on WhatsApp</a>
-    </div>
+    <!-- Product Section -->
+    <section class="products" id="products">
+        <div class="product-card">
+            <img src="https://github.com/KHALID979/my-website/blob/47aedfa52c1b3eab551158b9db2158f27a42f4b3/264.jpg?raw=true" alt="Leather Wallet" />
+            <h2>Leather Wallet</h2>
+            <p>৳500</p>
+            <button class="cart-btn">Add to Cart</button>
+            <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Leather%20Wallet" target="_blank">Order on WhatsApp</a>
+        </div>
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200?text=Product+2" alt="Product 2" />
-      <h2>Smart Watch</h2>
-      <p>৳1200</p>
-      <button class="cart-btn">Add to Cart</button>
-      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Smart%20Watch" target="_blank">Order on WhatsApp</a>
-    </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Product+2" alt="Smart Watch" />
+            <h2>Smart Watch</h2>
+            <p>৳1200</p>
+            <button class="cart-btn">Add to Cart</button>
+            <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Smart%20Watch" target="_blank">Order on WhatsApp</a>
+        </div>
 
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x200?text=Product+3" alt="Product 3" />
-      <h2>Bluetooth Speaker</h2>
-      <p>৳850</p>
-      <button class="cart-btn">Add to Cart</button>
-      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Bluetooth%20Speaker" target="_blank">Order on WhatsApp</a>
-    </div>
-  </section>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200?text=Product+3" alt="Bluetooth Speaker" />
+            <h2>Bluetooth Speaker</h2>
+            <p>৳850</p>
+            <button class="cart-btn">Add to Cart</button>
+            <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Bluetooth%20Speaker" target="_blank">Order on WhatsApp</a>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Khalid's Shop. All rights reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Khalid's Shop. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
