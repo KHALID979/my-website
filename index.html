@@ -2,117 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>e-Anoza | Organic & Fashion Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>e-Anoza Organic & Fashion</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f7f6;
-      color: #333;
-      font-size: 18px;
+      background-color: #FDFDFD;
+      color: #222;
     }
-    .navbar {
-      background-color: #1b4332;
-      padding: 15px;
-      text-align: center;
+    nav {
+      background-color: #2D6A4F;
+      padding: 10px;
     }
-    .navbar ul {
+    nav ul {
       list-style-type: none;
-      padding: 0;
+      display: flex;
+      justify-content: center;
       margin: 0;
+      padding: 0;
     }
-    .navbar ul li {
-      display: inline;
+    nav ul li {
       margin: 0 15px;
     }
-    .navbar ul li a {
+    nav ul li a {
+      color: white;
       text-decoration: none;
-      color: #fff;
-      font-weight: bold;
+      font-size: 18px;
     }
     header {
-      background-color: #40916c;
-      padding: 40px 20px;
       text-align: center;
-      color: white;
+      padding: 30px 10px;
+      background-color: #E9C46A;
+    }
+    header h1 {
+      font-size: 32px;
+      margin: 0;
     }
     .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
     }
     .product-card {
-      background-color: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      width: 300px;
+      background: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
       text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .product-card img {
-      max-width: 100%;
-      border-radius: 8px;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
     }
     .product-card h2 {
-      color: #2d6a4f;
+      font-size: 22px;
     }
     .product-card p {
-      font-weight: bold;
+      font-size: 18px;
+      color: #444;
+    }
+    .cart-btn, .whatsapp-btn {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
     .cart-btn {
-      background-color: #0077b6;
+      background-color: #A78BFA;
       color: white;
-      padding: 10px 20px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
     }
     .whatsapp-btn {
-      display: inline-block;
       background-color: #25D366;
       color: white;
-      padding: 10px 20px;
-      border-radius: 6px;
       text-decoration: none;
-      margin-bottom: 10px;
-    }
-    .payment {
-      color: #6c757d;
-      font-size: 16px;
-      margin-top: 5px;
-    }
-    .contact {
-      padding: 40px 20px;
-      background-color: #e9ecef;
       text-align: center;
     }
-    .contact form {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    .contact input, .contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
+    .contact, footer {
+      padding: 20px;
+      text-align: center;
     }
     footer {
-      background-color: #1b4332;
+      background-color: #001F54;
       color: white;
-      text-align: center;
-      padding: 15px;
     }
   </style>
 </head>
 <body>
-  <nav class="navbar">
+  <nav>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#products">Products</a></li>
@@ -120,41 +106,35 @@
       <li><a href="https://www.facebook.com/sfadhrvagn" target="_blank">Facebook</a></li>
     </ul>
   </nav>
-
   <header>
-    <h1>Welcome to e-Anoza</h1>
-    <p>Organic, Fashion, Cosmetics & More</p>
+    <h1>Welcome to e-Anoza Organic & Fashion</h1>
   </header>
-
   <section class="products" id="products">
     <div class="product-card">
-      <img src="https://github.com/KHALID979/my-website/blob/main/264.jpg?raw=true" alt="Leather Wallet" />
+      <img src="https://raw.githubusercontent.com/KHALID979/my-website/main/264.jpg" alt="Leather Wallet" />
       <h2>Leather Wallet</h2>
       <p>৳500</p>
-      <p class="payment">Payment: Cash on Delivery</p>
+      <p><strong>Payment:</strong> Cash on Delivery</p>
       <button class="cart-btn">Add to Cart</button>
       <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Leather%20Wallet" target="_blank">Order on WhatsApp</a>
     </div>
-
     <div class="product-card">
-      <img src="https://github.com/KHALID979/my-website/blob/main/khajur.jpg?raw=true" alt="Organic Khajur" />
-      <h2>Organic Khajur</h2>
-      <p>৳300</p>
-      <p class="payment">Payment: Cash on Delivery</p>
+      <img src="https://raw.githubusercontent.com/KHALID979/my-website/main/khajur.jpg" alt="Organic Dates" />
+      <h2>Organic Dates</h2>
+      <p>৳700</p>
+      <p><strong>Payment:</strong> Cash on Delivery</p>
       <button class="cart-btn">Add to Cart</button>
-      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Organic%20Khajur" target="_blank">Order on WhatsApp</a>
+      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Organic%20Dates" target="_blank">Order on WhatsApp</a>
     </div>
-
     <div class="product-card">
-      <img src="https://github.com/KHALID979/my-website/blob/main/modhu.jpg?raw=true" alt="Pure Honey" />
-      <h2>Pure Honey</h2>
-      <p>৳450</p>
-      <p class="payment">Payment: Cash on Delivery</p>
+      <img src="https://raw.githubusercontent.com/KHALID979/my-website/main/honey.jpg" alt="Organic Honey" />
+      <h2>Organic Honey</h2>
+      <p>৳850</p>
+      <p><strong>Payment:</strong> Cash on Delivery</p>
       <button class="cart-btn">Add to Cart</button>
-      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Pure%20Honey" target="_blank">Order on WhatsApp</a>
+      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Organic%20Honey" target="_blank">Order on WhatsApp</a>
     </div>
   </section>
-
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <form>
@@ -164,7 +144,6 @@
       <button type="submit">Send</button>
     </form>
   </section>
-
   <footer>
     <p>© 2025 e-Anoza. All rights reserved.</p>
   </footer>
