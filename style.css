@@ -1,41 +1,65 @@
-/* Global Styles */
+/* Global */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f7fa;
+  background-color: #f9f9f9;
   color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #343a40;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
 }
 
 /* Header */
 header {
   background-color: #007bff;
   color: white;
-  padding: 20px 0;
   text-align: center;
+  padding: 30px 10px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-/* Product Section */
+/* Products */
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
   gap: 20px;
+  padding: 20px;
 }
 
 .product-card {
-  background-color: white;
+  background: white;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px;
   width: 300px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
@@ -43,26 +67,61 @@ header h1 {
   transform: scale(1.03);
 }
 
-.product-card h2 {
-  margin-top: 0;
-  font-size: 20px;
-  color: #007bff;
+.product-card img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 
-.product-card p {
-  font-size: 16px;
+/* Contact Section */
+.contact {
+  background: #f1f1f1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.contact button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
 }
 
 /* Footer */
 footer {
+  background-color: #222;
+  color: white;
   text-align: center;
   padding: 15px;
-  background-color: #222;
-  color: #eee;
   margin-top: 30px;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
   .products {
     flex-direction: column;
@@ -71,9 +130,5 @@ footer {
 
   .product-card {
     width: 90%;
-  }
-
-  header h1 {
-    font-size: 22px;
   }
 }
