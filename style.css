@@ -64,10 +64,11 @@ header {
 }
 
 header img {
-  width: 35px;
+  width: 28px; /* ঘরের বাজার এর মত ছোট */
   height: auto;
   margin-bottom: 5px;
 }
+
 
 /* Products Section */
 .products {
