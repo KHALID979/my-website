@@ -1,57 +1,33 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>আমার ব্যবসা</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f0f8ff;
-      text-align: center;
-    }
-    h1 {
-      color: #0a4275;
-    }
-    table {
-      margin: 0 auto;
-      border-collapse: collapse;
-      width: 80%;
-    }
-    th, td {
-      border: 1px solid #aaa;
-      padding: 10px;
-    }
-    img {
-      max-width: 100px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Business Website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>স্বাগতম আমার দোকানে</h1>
-  <p>এখানে আপনি নানা ধরনের পণ্য পাবেন!</p>
+  <header>
+    <h1>Welcome to Khalid's Shop</h1>
+  </header>
 
-  <h2>আমাদের পণ্যসমূহ</h2>
-  <table>
-    <tr>
-      <th>পণ্যের ছবি</th>
-      <th>নাম</th>
-      <th>দাম</th>
-    </tr>
-    <tr>
-      <td><img src="https://via.placeholder.com/100x100?text=লাল+জামা" alt="লাল জামা"></td>
-      <td>লাল জামা</td>
-      <td>৫৫০ টাকা</td>
-    </tr>
-    <tr>
-      <td><img src="https://via.placeholder.com/100x100?text=নীল+টুপি" alt="নীল টুপি"></td>
-      <td>নীল টুপি</td>
-      <td>২৫০ টাকা</td>
-    </tr>
-    <tr>
-      <td><img src="https://via.placeholder.com/100x100?text=কালো+ব্যাগ" alt="কালো ব্যাগ"></td>
-      <td>কালো ব্যাগ</td>
-      <td>৭৫০ টাকা</td>
-    </tr>
-  </table>
+  <section class="products">
+    <div class="product-card">
+      <h2>Product 1</h2>
+      <p>Price: ৳500</p>
+    </div>
+    <div class="product-card">
+      <h2>Product 2</h2>
+      <p>Price: ৳750</p>
+    </div>
+    <div class="product-card">
+      <h2>Product 3</h2>
+      <p>Price: ৳900</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Khalid's Shop. All rights reserved.</p>
+  </footer>
 </body>
 </html>
