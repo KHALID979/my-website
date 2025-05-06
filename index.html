@@ -1,37 +1,229 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-K8VCG2FD');
-  </script>
-  <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>e-Anoza Organic & Fashion</title>
   <style>
-    /* (আপনার CSS কোড একই রইল, এখানে কেটে দেয়া হলো সংক্ষিপ্ত করার জন্য) */
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+```
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F9F9F9;
+  color: #222;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #2D6A4F;
+  padding: 12px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header {
+  background-color: #E9C46A;
+  text-align: center;
+  padding: 40px 10px;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h2 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 17px;
+  color: #444;
+}
+
+.cart-btn,
+.whatsapp-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cart-btn {
+  background-color: #6C63FF;
+  color: white;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact {
+  padding: 30px;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+.contact input,
+.contact textarea {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2D6A4F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #001F54;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 22px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 8px 0;
+  }
+}
+```
+
   </style>
 </head>
-
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8VCG2FD"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   <nav>
-    <!-- (বাকি সবকিছু একদম আগের মতোই থাকবে) -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.facebook.com/sfadhrvagn" target="_blank">Facebook</a></li>
+    </ul>
   </nav>
 
-  <!-- আপনার কনটেন্ট এখানে -->
+  <header>
+    <h1>Welcome to e-Anoza Organic & Fashion</h1>
+  </header>
+
+  <section class="products" id="products">
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/KHALID979/my-website/a54cf8eb853bb16f00b1028cc84c21ac0aaa9fbd/264.jpg" alt="Leather Wallet" />
+      <h2>Leather Wallet</h2>
+      <p>৳500</p>
+      <p><strong>Payment:</strong> Cash on Delivery</p>
+      <button class="cart-btn">Add to Cart</button>
+      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Leather%20Wallet" target="_blank">Order on WhatsApp</a>
+    </div>
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/KHALID979/my-website/a54cf8eb853bb16f00b1028cc84c21ac0aaa9fbd/%E0%A6%96%E0%A7%87%E0%A6%9C%E0%A7%81%E0%A6%B0.jpg" alt="Organic Dates" />
+      <h2>Organic Dates</h2>
+      <p>৳700</p>
+      <p><strong>Payment:</strong> Cash on Delivery</p>
+      <button class="cart-btn">Add to Cart</button>
+      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Organic%20Dates" target="_blank">Order on WhatsApp</a>
+    </div>
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/KHALID979/my-website/a54cf8eb853bb16f00b1028cc84c21ac0aaa9fbd/%E0%A6%AE%E0%A6%A7%E0%A7%81.jpg" alt="Organic Honey" />
+      <h2>Organic Honey</h2>
+      <p>৳850</p>
+      <p><strong>Payment:</strong> Cash on Delivery</p>
+      <button class="cart-btn">Add to Cart</button>
+      <a class="whatsapp-btn" href="https://wa.me/8801540143224?text=I%20want%20to%20order%20Organic%20Honey" target="_blank">Order on WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <br />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 e-Anoza. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
